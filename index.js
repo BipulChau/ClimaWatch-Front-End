@@ -68,7 +68,9 @@ window.addEventListener("load", () => {
     t_body.innerHTML = "";
 
     let res = await fetch(
-      `http://127.0.0.1:2022/locations/${localStorage.getItem("username")}`,
+      `http://ec2-18-116-115-64.us-east-2.compute.amazonaws.com:8080/locations/${localStorage.getItem(
+        "username"
+      )}`,
       {
         credentials: "include",
         method: "GET",
